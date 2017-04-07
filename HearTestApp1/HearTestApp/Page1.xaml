@@ -1,0 +1,182 @@
+﻿<Page
+    x:Class="HearTestApp.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HearTestApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF255E78" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!--  ***************************     TextBlock/MediaElement/Button/TextBlockResult for test of Sound 1  ***************************     -->
+
+        <!-- Media Element of a Sound referencing to the source of the sound clip -->
+
+        <TextBlock x:Name="textBlock1" 
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Sound 1 of Frequency 8000hz"
+                   VerticalAlignment="Top" Height="147" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Visible"/>
+
+
+        <MediaElement x:Name="MediaElement1"  Source="Assets/soundClips/8000hz.wav" AutoPlay="False"/>
+        <Button x:Name="Button1" Content="Play Sound 1"  HorizontalAlignment="Center"  VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="104,297,109,274" Width="147" Height="69" BorderThickness="4" Click="Button1_Click" />
+
+        <TextBlock x:Name="textBlock1Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" Cant hear 8000hz sound Frequency? Then you may have a possible hearing imparement"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+
+        <!--  ***************************     TextBlock/MediaElement/Button/TextBlockResult for test of Sound 2  ***************************     -->
+
+
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Margin="10,89,0,0" TextWrapping="Wrap" 
+                   Text="Sound 2 of Frequency 12000hz" 
+                   VerticalAlignment="Top" 
+                   Height="147" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+        <MediaElement x:Name="MediaElement2" Source="Assets/soundClips/12000hz.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <Button x:Name="Button2"  Content="Play Sound 2" HorizontalAlignment="Center"  VerticalAlignment="Center"  Visibility="Collapsed" 
+                 FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="104,297,109,274" Width="147" Height="69" BorderThickness="4" Click="Button2_Click" />
+
+        <TextBlock x:Name="textBlock2Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" Cant hear 12000hz sound Frequency? Your Average hearing age is Over 50 yeears of age!"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+
+        <!--  ***************************     TextBlock/MediaElement/Button/TextBlockResult for test of Sound 3  ***************************     -->
+
+
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Center" Margin="10,89,0,0" TextWrapping="Wrap" 
+                   Text="Sound 3 of Frequency 15000hz" 
+                   VerticalAlignment="Top" 
+                   Height="147" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+        <MediaElement x:Name="MediaElement3" Source="Assets/soundClips/15000hz.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <Button x:Name="Button3"  Content="Play Sound 3" HorizontalAlignment="Center"  VerticalAlignment="Center"  Visibility="Collapsed" 
+                 FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="104,297,109,274" Width="147" Height="69" BorderThickness="4" Click="Button3_Click" />
+        <TextBlock x:Name="textBlock3Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" Cant hear 15000hz sound Frequency? Your Average hearing age is Over 40 yeears of age!"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+
+
+        <!--  ***************************     TextBlock/MediaElement/Button/TextBlockResult for test of Sound 4  ***************************     -->
+
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Center" Margin="10,89,0,0" TextWrapping="Wrap" 
+                   Text="Sound 4 of Frequency 16000hz" 
+                   VerticalAlignment="Top" 
+                   Height="147" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+        <MediaElement x:Name="MediaElement4" Source="Assets/soundClips/16000hz.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <Button x:Name="Button4"  Content="Play Sound 4" HorizontalAlignment="Center"  VerticalAlignment="Center"  Visibility="Collapsed" 
+                 FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="104,297,109,274" Width="147" Height="69" BorderThickness="4" Click="Button4_Click"  />
+        <TextBlock x:Name="textBlock4Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" Cant hear 16000hz sound Frequency? Your Average hearing age is Over 30 yeears of age!"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+
+        <!--  ***************************     TextBlock/MediaElement/Button/TextBlockResult for test of Sound 5  ***************************     -->
+
+
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Center" Margin="10,89,0,0" TextWrapping="Wrap" 
+                   Text="Sound 5 of Frequency 17000hz" 
+                   VerticalAlignment="Top" 
+                   Height="147" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+        <MediaElement x:Name="MediaElement5" Source="Assets/soundClips/17000hz.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <Button x:Name="Button5"  Content="Play Sound 5" HorizontalAlignment="Center"  VerticalAlignment="Center"  Visibility="Collapsed" 
+                 FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="104,297,109,274" Width="147" Height="69" BorderThickness="4" Click="Button5_Click"   />
+        <TextBlock x:Name="textBlock5Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" Cant hear 17000hz sound Frequency? Your Average hearing age is Over 24 yeears of age!"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+
+        <!--  ***************************     TextBlock/MediaElement/Button/TextBlockResult for test of Sound 6     ***************************     -->
+
+
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Center" Margin="10,89,0,0" TextWrapping="Wrap" 
+                   Text="Sound 6 of Frequency 19000hz" 
+                   VerticalAlignment="Top" 
+                   Height="147" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+        <MediaElement x:Name="MediaElement6" Source="Assets/soundClips/19000hz.wav" AutoPlay="False" Visibility="Collapsed"/>
+        <Button x:Name="Button6"  Content="Play Sound 6" HorizontalAlignment="Center"  VerticalAlignment="Center"  Visibility="Collapsed" 
+                 FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="104,297,109,274" Width="147" Height="69" BorderThickness="4" Click="Button6_Click" />
+        <TextBlock x:Name="textBlock6Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" Cant hear 19000hz sound Frequency? Your Average hearing age is Over 24 years of age!"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+        <TextBlock x:Name="textBlock7Result"
+                   HorizontalAlignment="Center" 
+                   Margin="10,105,0,0" 
+                   TextWrapping="Wrap" 
+                   Text=" WOW! You have great hearing! Your average hearing age is under 20!"
+                   VerticalAlignment="Top" Height="300" Width="340" 
+                   Foreground="#FF6CDA20" FontFamily="Bradley Hand ITC" FontSize="36"
+                   Visibility="Collapsed"/>
+
+        <!-- ***************************       SaveButton & HomeButton  that appears when user cannot hear a played sound      ***************************      -->
+        <Button x:Name="SaveButton"  Content="Save Result"
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                Visibility="Collapsed" 
+                FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="15,410,198,161" Width="147" Height="69" 
+                BorderThickness="4"
+                Click="SaveButton_Click"  />
+
+
+        <Button x:Name="HomeButton" Content="Home" 
+                HorizontalAlignment="Center"  VerticalAlignment="Center" 
+                FontWeight="Bold" FontFamily="Bradley Hand ITC" Foreground="#FF48F93F" Margin="179,410,34,161" Width="147" Height="69" 
+                BorderThickness="4"
+                Click="HomeButton_Click" 
+                Visibility="Collapsed"/>
+
+    </Grid>
+</Page>
